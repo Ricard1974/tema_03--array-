@@ -14,6 +14,15 @@ echo('<pre>');
 var_dump($animales);  // nois da info si son integros , string etc, cuenta caracteres
 echo('</pre>');
 
+foreach ($animales as $animal) {
+    echo $animal . "<br>";
+}
+
+foreach ($num as $numero) {
+    echo $numero . "<br>";
+}
+
+
 echo "<br/>";
 
 echo('<pre>');
