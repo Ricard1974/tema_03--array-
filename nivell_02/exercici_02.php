@@ -10,6 +10,66 @@ classe sencera.
 <?php
 
 
+$notas_alumnos = [
+    'Juan' => [8, 7, 6, 9, 8],
+    'María' => [9, 8, 7, 9, 10],
+    'Pedro' => [7, 6, 8, 5, 7]
+];
+
+// Mostrar las notas de cada alumno
+foreach ($notas_alumnos as $alumno => $notas) {
+    echo "Notas de $alumno: ";
+    foreach ($notas as $nota) {
+        echo $nota . " ";
+
+    }
+    echo "<br>";
+    $sumadenotas= array_sum($notas);
+    $numerodenotas= count($notas);
+    echo "<br>";
+    echo 'numero de notas'.$numerodenotas;
+    echo "<br>";
+    echo 'suma de notas'.$sumadenotas;
+    echo "<br>";
+    echo 'media de notas'.$sumadenotas / $numerodenotas;
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // $clase=array();
 
 
@@ -67,21 +127,31 @@ classe sencera.
 
 
 
-echo "<br>";
+// echo "<br>";
 
 
 
 
-$alumnos = array(
-    'Ana' => 5, 7, 8, 6, 9,
-    'Baltasar' => 5, 5, 5, 5, 5,
-    'Cesar' => 5, 7, 8, 6, 6,
-);
+// $alumnos = array(
+//     'Ana' => 5, 7, 8, 6, 9,
+//     'Baltasar' => 5, 5, 5, 5, 5,
+//     'Cesar' => 5, 7, 8, 6, 6,
+// );
 
-foreach ($alumnos as $fila) {
+
+// $result = array_map(fn($element) => pow($element, 3), $alumnos);
+
+// var_dump($result);
+
+
+
+
+
+
+// foreach ($alumnos as $fila) {
   
-        echo " $fila ";
-    }
+//         echo " $fila ";
+//     }
 
     echo "<br>";
 
@@ -89,8 +159,8 @@ foreach ($alumnos as $fila) {
 
 echo "<pre>";
 // print_r($alumnes[0]) ;
-print_r($alumnos) ;
-var_dump($alumnos);
+// print_r($alumnos) ;
+// var_dump($alumnos);
 
 // echo array_sum($alumnes[0])/5;
 // echo array_sum($alumnes[0],[1])/5;
