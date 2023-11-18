@@ -9,35 +9,51 @@ classe sencera.
 
 <?php
 
-
+echo "<br>";
 $notas_alumnos = [
     'Juan' => [8, 7, 6, 9, 8],
     'María' => [9, 8, 7, 9, 10],
     'Pedro' => [7, 6, 8, 5, 7]
 ];
-
+echo "<br>";
 // Mostrar las notas de cada alumno
 foreach ($notas_alumnos as $alumno => $notas) {
-    echo "Notas de $alumno: ";
+    echo "<br/>Notas de $alumno: <br/>";
     foreach ($notas as $nota) {
         echo $nota . " ";
 
     }
-    echo "<br>";
+    // echo "<br>";
     $sumadenotas= array_sum($notas);
     $numerodenotas= count($notas);
-    echo "<br>";
-    echo 'numero de notas'.$numerodenotas;
-    echo "<br>";
-    echo 'suma de notas'.$sumadenotas;
-    echo "<br>";
-    echo 'media de notas'.$sumadenotas / $numerodenotas;
     
-  
+ 
+ 
+    echo "<br>";
+    // echo 'numero de notas'.$numerodenotas;
+    // echo "<br>";
+    echo 'suma de notas '.$sumadenotas;
+    echo "<br>";
+    echo 'media de notas '.$sumadenotas / $numerodenotas;
+
+    echo '';
 }
 
 
+$total_notas = 0;
+foreach ($notas_alumnos as $notas) {
+    $total_notas += array_sum($notas);
+}
 
+$numeroAlumnos=count($notas_alumnos);
+
+
+echo "<br>";
+echo 'Numero total de alumnos'.$numeroAlumnos;
+echo "<br>";
+echo 'Suma total de las notas '.$total_notas;
+echo "<br>";
+echo 'Media total de la clase ='.($total_notas/$numeroAlumnos)/$numerodenotas;
 
 
 
